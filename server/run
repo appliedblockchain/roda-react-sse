@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# bundle exec rackup -p 3000
+
+# TODO: rerun
+bundle exec rackup -p 3000
