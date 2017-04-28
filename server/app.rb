@@ -4,9 +4,9 @@ module DataFetch
   def data_fetch
     {
       example: [
-        { a: 100 + rand(10) },
-        { b: 200 + rand(50) },
-        { c: 150 + rand(80) },
+        { id: 1, price: 100 + rand(10), size: rand(10) },
+        { id: 2, price: 200 + rand(50), size: rand(10) },
+        { id: 3, price: 150 + rand(80), size: rand(10) },
       ]
     }
   end
@@ -20,11 +20,13 @@ class App < Roda
   include FormatStream
 
   route do |r|
+
     r.root do
       "Hello world!"
     end
 
     r.on "example" do
+      response['Access-Control-Allow-Origin'] = "http://localhost:5100"
       response['Content-Type'] = 'text/event-stream'
       stream do |out|
         while true do
@@ -33,6 +35,7 @@ class App < Roda
         end
       end
     end
+
   end
 
 end

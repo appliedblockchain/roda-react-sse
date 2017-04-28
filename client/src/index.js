@@ -1,9 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './app'
+import store from './store_instance'
+import startup from './startup'
+import './index.css'
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+const d = document
+const rootElement = d.querySelector('#root')
+
+const reactRender = () => {
+  ReactDOM.render(
+    <App />,
+    rootElement
+  )
+}
+
+reactRender()
+
+store.subscribe((evt) =>
+  reactRender()
+)
+
+startup()
