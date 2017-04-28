@@ -8,3 +8,4 @@ You can choose one/multiple features to implement based on your liking, the more
 - Add tests (Jest runner is already set-up in `client` callable via `npm test` - check https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests for more infos and to configure your favourite matching libraries etc.)
 - Add another feature you think is good to demostrate your skills
 - Add some HTML elements and style them (https://bulma.io or custom)
+- Add React-Router and a second page
