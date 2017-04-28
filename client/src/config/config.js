@@ -1,7 +1,7 @@
 import environment from './env'
 
 const defaultConfig = {
-  host:  "localhost:3000",
+  host:  "localhost:3001",
   proto: "http",
 }
 

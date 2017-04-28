@@ -8,17 +8,39 @@ Sample Roda + React app live updated via EventSource (SSE), useful as project ba
 ### Setup
 
 ```
-cd client && npm install
+cd client
+
+npm install
+```
+
+on another terminal window:
+
+```
+cd server
+
+bundle
 ```
 
 ### Launch (Dev)
 
 ```
-cd client && npm start
+cd server
+
+./run
 ```
 
-on another terminal:
+on another shell:
 
 ```
-cd server && ./run
+cd client
+
+npm start
+```
+
+### Launch (Dev \w foreman)
+
+(or shoreman or alternatives)
+
+```
+foreman start
 ```

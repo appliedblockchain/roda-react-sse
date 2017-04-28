@@ -26,7 +26,7 @@ class App < Roda
     end
 
     r.on "example" do
-      response['Access-Control-Allow-Origin'] = "http://localhost:5100"
+      response['Access-Control-Allow-Origin'] = CONFIG[:host]
       response['Content-Type'] = 'text/event-stream'
       stream do |out|
         while true do
