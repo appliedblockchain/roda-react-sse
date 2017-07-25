@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './app'
-import store from './store_instance'
+import store from './store'
 import startup from './startup'
 import './index.css'
 

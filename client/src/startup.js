@@ -1,13 +1,16 @@
-const c = console
-import PricesEs from './api/prices_es'
-import priceActions from './actions/prices'
+import PricesEs from './api/pricesEs'
+import { Actions } from './reducers/prices'
+import { Actions as WeatherActions } from './reducers/weather'
 
 const startup = () => {
   // fetch initial data
   PricesEs.onMessage((message) => {
-    c.log("message:", message) // you can comment this line to disable the sample log
-    priceActions.update(message)
+    Actions.update(message)
   })
+
+  // fetch weather for london
+  // 51.508530, -0.076132 - Tower of London
+  WeatherActions.request(51.508530, -0.076132)
 }
 
 export default startup
