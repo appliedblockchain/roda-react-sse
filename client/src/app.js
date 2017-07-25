@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import storeInstance from './store_instance'
+import store from './store'
 import Provider from './lib/provider'
-import AppContent from './comp/app_content'
+import AppContent from './components/AppContent'
 
 class App extends Component {
   render() {
@@ -10,7 +10,7 @@ class App extends Component {
         {
           // if a router is present you'll probably need to define the provider on every route unless you want to save in the store the current route path as well
         }
-        <Provider store={storeInstance}>
+        <Provider store={store}>
           <AppContent />
         </Provider>
       </div>

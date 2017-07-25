@@ -1,9 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    faraday (0.12.2)
+      multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.1)
+      faraday
+      hashie
+      multi_json
     haml (5.0.0)
       temple (>= 0.8.0)
       tilt
+    hashie (3.5.6)
+    multi_json (1.12.1)
+    multipart-post (2.0.0)
     oj (3.0.2)
     puma (3.8.2)
     rack (2.0.1)
@@ -16,10 +25,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  forecast_io
   haml
   oj
   puma
   roda
 
 BUNDLED WITH
-   1.14.6
+   1.15.2

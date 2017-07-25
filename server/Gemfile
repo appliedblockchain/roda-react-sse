@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
+gem "forecast_io"
 gem "haml"
 gem "roda"
-
 gem "oj"
-
 gem "puma"
