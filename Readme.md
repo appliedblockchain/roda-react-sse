@@ -1,4 +1,3 @@
-# roda-react-sse
 
 ### Roda + React + Server Sent Events
 
@@ -44,3 +43,9 @@ npm start
 ```
 foreman start
 ```
+
+
+### SSE useful links (JS)
+
+#### - https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events (spec)
+#### - https://github.com/makevoid/sinatra_sse_example/blob/master/views/index.haml#L4-L12 (sample usage)
