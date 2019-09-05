@@ -44,3 +44,8 @@ npm start
 ```
 foreman start
 ```
+
+
+### SSE useful links (JS)
+
+#### - https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
