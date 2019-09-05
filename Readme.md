@@ -2,7 +2,7 @@
 
 this fork is no longer maintained, please see main remote: 
 
-#### - https://githhub.com/makevoid/roda-react-sse
+#### - https://github.com/makevoid/roda-react-sse
 
 ---
 
