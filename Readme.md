@@ -1,4 +1,3 @@
-# roda-react-sse
 
 this fork is no longer maintained, please see main remote: 
 
@@ -56,4 +55,6 @@ foreman start
 
 ### SSE useful links (JS)
 
-#### - https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events
+
+#### - https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events 
+#### - https://github.com/makevoid/sinatra_sse_example/blob/master/views/index.haml#L4-L12 (sample usage)
